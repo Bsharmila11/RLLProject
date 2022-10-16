@@ -1,0 +1,18 @@
+<div>
+    <h2>Add Schedule</h2>
+    <form [formGroup]="scheduleRef" (ngSubmit)="storeSchedule()">
+        <label>ScheduleID</label>
+        <input type="number" formControlName="sid"><br/>
+        <label>EId</label>
+        <input type="number" formControlName="eid"><br/>
+        <label>Date</label>
+        <input type="text" formControlName="date"><br/>
+        <label>Time</label>
+        <input type="number" formControlName="time"><br/>
+        <label>Task</label>
+        <input type="text" formControlName="task"><br/>
+        <input type="submit" value="storeSchedule"/><br/>
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>

@@ -1,0 +1,17 @@
+<div>
+    <h2>Add Salary</h2>
+    <form [formGroup]="salaryRef" (ngSubmit)="storeSalary()">
+        <label>SalaryID</label>
+        <input type="number" formControlName="salaryid"><br/>
+        <label>EId</label>
+        <input type="number" formControlName="eid"><br/>
+        <label>Month</label>
+        <input type="text" formControlName="month"><br/>
+        <label>Salary</label>
+        <input type="number" formControlName="salary"><br/>
+        <input type="submit" value="storeSalary"/><br/>
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>
+

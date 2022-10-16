@@ -1,0 +1,17 @@
+<div>
+    <h2>Welcome to home page admin {{user}}</h2>
+    <a routerLink="addEmployee">Add Employee</a> |
+    <a routerLink="findAllEmployee">View Employee</a> |
+    <a routerLink="addSalary">Add Salary</a> |
+    <a routerLink="addAttendance">Add Attendance</a> |
+    <a routerLink="addSchedule">Add Schedule</a> |
+    <a routerLink="addLeavedata">Add Leavedata</a>
+
+    
+    
+    <br/>
+    <hr/>
+        <router-outlet></router-outlet>
+    <hr/>
+    <input type="button" value="logout" (click)="logout()"/>
+</div>

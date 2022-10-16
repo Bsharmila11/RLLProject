@@ -1,0 +1,25 @@
+<div class="box">
+    <div class="formlabel">Register Your Details Here!!!</div>
+    <form class="form" [formGroup]="loginRef" (ngSubmit)="signUp()">
+        <div class="formgroup">
+        <label  class="emaillabel">Email : </label>
+        <input type="email" formControlName="emailid"/><br/><br/>
+        </div>
+        <div class="formgroup">
+        <label  class="passwordlabel">Password : </label>
+        <input type="password" formControlName="password"/><br/><br/>
+        </div> 
+        <div class="radio">
+        <label  class="radiolabel">TypeOfUser : </label>
+        <input type="radio" name="typeOfUser" value="admin" formControlName="typeOfUser"/>Admin
+        <input type="radio" name="typeOfUser" value="user" formControlName="typeOfUser"/>Employee<br/><br/>
+        </div>
+        <div class="buttongroup">
+        <input type="submit" value="Register" /> &nbsp; &nbsp; &nbsp; 
+        <input type="reset" value="Reset"/>
+       </div>
+    </form>
+    <br/>
+    <span style="color:red">{{msg}}</span><br/>
+    <a routerLink="/login">Login</a>
+</div>

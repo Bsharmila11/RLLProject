@@ -1,0 +1,22 @@
+<div>
+    <h2>Add Employee</h2>
+    <form [formGroup]="employeeRef" (ngSubmit)="storeEmployee()">
+        <label>ID</label>
+        <input type="number" formControlName="id"><br/>
+        <label>FirstName</label>
+        <input type="text" formControlName="firstname"><br/>
+        <label>LastName</label>
+        <input type="text" formControlName="lastname"><br/>
+        <label>Role</label>
+        <input type="text" formControlName="role"><br/>
+        <label>EmailId</label>
+        <input type="text" formControlName="emailid"><br/>
+        <label>DOB</label>
+        <input type="text" formControlName="dob"><br/>
+        <label>Gender</label>
+        <input type="text" formControlName="gender"><br/>
+        <input type="submit" value="storeEmployee"/><br/>
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>

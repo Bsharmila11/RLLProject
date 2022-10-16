@@ -1,0 +1,17 @@
+<div>
+    <h2>Add Attendance</h2>
+    <form [formGroup]="attendanceRef" (ngSubmit)="storeAttendance()">
+        <label>AttendanceID</label>
+        <input type="number" formControlName="aid"><br/>
+        <label>EId</label>
+        <input type="number" formControlName="eid"><br/>
+        <label>Date</label>
+        <input type="text" formControlName="date"><br/>
+        <label>Status</label>
+        <input type="text" formControlName="status"><br/>
+        <input type="submit" value="storeAttendance"/><br/>
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>
+

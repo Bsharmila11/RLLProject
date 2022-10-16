@@ -1,0 +1,19 @@
+<div>
+    <h2>Add Leavedata</h2>
+    <form [formGroup]="leavedataRef" (ngSubmit)="storeLeavedata()">
+        <label>Leave ID</label>
+        <input type="number" formControlName="lid"><br/>
+        <label>EId</label>
+        <input type="number" formControlName="eid"><br/>
+        <label>FDate</label>
+        <input type="text" formControlName="fdate"><br/>
+        <label>TDate</label>
+        <input type="text" formControlName="tdate"><br/>
+        <label>Reason</label>
+        <input type="text" formControlName="reason"><br/>
+        <input type="submit" value="storeLeavedata"/><br/>
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>
+

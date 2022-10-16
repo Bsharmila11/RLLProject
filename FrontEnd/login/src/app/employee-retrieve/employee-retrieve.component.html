@@ -1,0 +1,25 @@
+<div>
+    <h2>Add Employee Details</h2>
+    <div *ngIf="flag">
+            <h2>Update Employee</h2>
+            <form (ngSubmit)="updateDataFromDb()">
+                <label>Id</label>
+                <input type="number" name="id" [(ngModel)]="id" readonly/><br/>
+                <label>FirstName</label>
+                <input type="text" name="firstname" [(ngModel)]="firstname"/><br/>
+                <label>LastName</label>
+                <input type="text" name="lastname" [(ngModel)]="lastname"/><br/>
+                <label>EmailId</label>
+                <input type="text" name="emailid" [(ngModel)]="emailid"/><br/>
+                <label>Role</label>
+                <input type="text" name="role" [(ngModel)]="role"/><br/>
+                <input type="submit" value="update data"/>
+                <input type="reset" value="reset"/>
+            </form>
+    </div>
+    <span *ngFor="let e of employees"><br/><br/>
+        <span>{{e.firstname}} {{e.lastname}} {{e.role}} {{e.emailid}}</span>
+        <input type="button" value="delete" (click)="deleteEmployee(e.id)"/>
+        <input type="button" value="update" (click)="updateEmployee(e)"/>
+    </span>
+</div>
