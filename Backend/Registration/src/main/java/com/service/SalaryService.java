@@ -17,16 +17,11 @@ public class SalaryService {
 		return "Salary details stored";
 	}
 	
-	public String findSalaryById(int salaryid) {
-		Optional<Salary> result  = salaryrepository.findById(salaryid);
-		if(result.isPresent()) {
-			Salary s = result.get();
-			return s.toString();
-		}else {
-			return "Salary not present";
+	
+	
+	public String findSalaryById(int eid) {
+		return salaryrepository.findSalaryById(eid);
+		
 		}
-	}
-	
-	
 
 }

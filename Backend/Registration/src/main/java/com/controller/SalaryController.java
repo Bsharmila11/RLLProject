@@ -25,9 +25,11 @@ public class SalaryController {
 		return salaryservice.storeSalary(salary);
 	}
 	
-	@GetMapping(value="findAllEmployee/{salaryid}")
-	public String findSalaryById(@PathVariable("salaryid") int salaryid) {
-		return salaryservice.findSalaryById(salaryid);
+	
+	
+	@GetMapping(value="findsalary/{eid}")
+	public String findSalaryById(@PathVariable("eid") int eid) {
+		return salaryservice.findSalaryById(eid);
 	}
 
 }

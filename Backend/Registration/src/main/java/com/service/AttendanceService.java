@@ -16,5 +16,8 @@ public class AttendanceService {
 		return "Attendance details stored";
 	}
 	
-
+	public String findAttendanceById(int eid) {
+		return attendancerepository.findAttendanceById(eid);
+		
+		}
 }

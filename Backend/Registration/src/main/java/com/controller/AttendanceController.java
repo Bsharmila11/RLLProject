@@ -3,6 +3,8 @@ package com.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,5 +23,11 @@ public class AttendanceController {
 	public String storeAttendance(@RequestBody Attendance attendance) {
 		return attendanceservice.storeAttendance(attendance);
 	}
+	
+	@GetMapping(value="findattendance/{eid}")
+	public String findAttendanceById(@PathVariable("eid") int eid) {
+		return attendanceservice.findAttendanceById(eid);
+	}
+
 
 }

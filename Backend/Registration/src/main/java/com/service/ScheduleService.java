@@ -15,5 +15,10 @@ public class ScheduleService {
 		schedulerepository.save(schedule);
 		return "Schedule has been stored";
 	}
+	
+	public String findScheduleById(int eid) {
+		return schedulerepository.findScheduleById(eid);
+		
+		}
 
 }
