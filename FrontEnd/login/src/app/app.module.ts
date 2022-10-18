@@ -14,6 +14,11 @@ import { AddsalaryComponent } from './addsalary/addsalary.component';
 import { AddattendanceComponent } from './addattendance/addattendance.component';
 import { AddscheduleComponent } from './addschedule/addschedule.component';
 import { AddleavedataComponent } from './addleavedata/addleavedata.component';
+import { ViewsalaryComponent } from './viewsalary/viewsalary.component';
+import { ViewscheduleComponent } from './viewschedule/viewschedule.component';
+import { ViewattendanceComponent } from './viewattendance/viewattendance.component';
+import { UpdateemployeeComponent } from './updateemployee/updateemployee.component';
+import { ChangepasswordComponent } from './changepassword/changepassword.component';
 
 
 @NgModule({
@@ -29,7 +34,12 @@ import { AddleavedataComponent } from './addleavedata/addleavedata.component';
     AddattendanceComponent,
     AddscheduleComponent,
     AddleavedataComponent,
-
+    ViewsalaryComponent,
+    ViewscheduleComponent,
+    ViewattendanceComponent,
+    UpdateemployeeComponent,
+    ChangepasswordComponent,
+    
   ],
   imports: [
     BrowserModule,HttpClientModule,FormsModule,ReactiveFormsModule,

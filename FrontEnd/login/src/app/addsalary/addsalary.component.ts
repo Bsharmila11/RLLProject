@@ -32,6 +32,4 @@ export class AddsalaryComponent implements OnInit {
     this.salaryRef.reset();
   }
 
-  
-
 }

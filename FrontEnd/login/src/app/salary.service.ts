@@ -16,8 +16,16 @@ export class SalaryService {
       return this.http.post(this.baseUrl+"/storeSalary",salary,{responseType:"text"});
     }
 
+  //   findSalaryById(salaryid:number):Observable<string> {
+  //     return this.http.get(this.baseUrl+"/findSalaryById/"+salaryid,{responseType:"text"});
+  //  }
+// public findSalaryById(eid:String):Observable<Salary[]>{
+//   return this.http.get<Salary[]>(`${this.baseUrl}/${eid}`);
+  
+// }
+     viewsalary(eid:any):Observable<string>{
+      return this.http.get(this.baseUrl+"/findsalary/"+eid,{responseType:"text"});
+     }
 
-    findSalaryById(salaryid:number):Observable<string> {
-      return this.http.get(this.baseUrl+"/findSalaryById",{responseType:"text"});
-}
+     
 }

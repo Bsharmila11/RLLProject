@@ -10,7 +10,12 @@ import { EmployeeRetrieveComponent } from './employee-retrieve/employee-retrieve
 import { Login } from './login';
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
+import { UpdateemployeeComponent } from './updateemployee/updateemployee.component';
 import { UserdashboardComponent } from './userdashboard/userdashboard.component';
+import { ViewattendanceComponent } from './viewattendance/viewattendance.component';
+import { ViewsalaryComponent } from './viewsalary/viewsalary.component';
+import { ViewscheduleComponent } from './viewschedule/viewschedule.component';
+
 
 const routes: Routes = [
   {path:"login",component:SigninComponent},
@@ -24,13 +29,17 @@ const routes: Routes = [
     {path:"addSchedule",component:AddscheduleComponent},
     {path:"addLeavedata",component:AddleavedataComponent}
   ]},
-  {path:"userHome",component:UserdashboardComponent,children:[
-  
-    
-    
-  ]},
+  {path:"userHome",component:UserdashboardComponent},
+    {path:"viewsalary",component:ViewsalaryComponent},
+    {path:"viewschedule",component:ViewscheduleComponent},
+    {path:"viewattendance",component:ViewattendanceComponent},
+    {path:"updateEmployeebyuser",component:UpdateemployeeComponent},
   {path:"",redirectTo:"login",pathMatch:"full"},
-];
+  
+
+ ];
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

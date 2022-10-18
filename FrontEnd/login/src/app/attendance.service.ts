@@ -13,4 +13,8 @@ export class AttendanceService {
   storeAttendance(attendance:any):Observable<string> {
     return this.http.post(this.baseUrl+"/storeAttendance",attendance,{responseType:"text"});
   }
+
+  viewattendance(eid:any):Observable<string>{
+    return this.http.get(this.baseUrl+"/findattendance/"+eid,{responseType:"text"});
+   }
 }

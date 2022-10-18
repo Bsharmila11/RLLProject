@@ -26,4 +26,12 @@ export class EmployeeService {
     return this.http.delete(this.baseUrl+"/deleteEmployee/"+id,{responseType:"text"});
   }
 
+  updateEmployeebyuser(employee:any):Observable<string> {
+    return this.http.patch(this.baseUrl+"/updateEmployeebyuser",employee,{responseType:"text"});
+
+}
+
+findEmployeeId(id:number):Observable<Employee> {
+  return this.http.get<Employee>(this.baseUrl+"/findEmployeeId"+id);
+}
 }

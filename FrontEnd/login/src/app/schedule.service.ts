@@ -13,4 +13,10 @@ export class ScheduleService {
   storeSchedule(schedule:any):Observable<string> {
     return this.http.post(this.baseUrl+"/storeSchedule",schedule,{responseType:"text"});
   }
+
+  viewschedule(eid:any):Observable<string>{
+    return this.http.get(this.baseUrl+"/findschedule/"+eid,{responseType:"text"});
+   }
+
+   
 }

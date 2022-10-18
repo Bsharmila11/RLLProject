@@ -1,0 +1,23 @@
+<div>
+    <h2>Update Employee</h2>
+    <form [formGroup]="employeeRef" (ngSubmit)="updateEmployeebyuser(id)">
+
+        <label>Id</label>
+        <input type="number" formControlName="id"/><br/>
+        <label>FirstName</label>
+        <input type="text" formControlName="firstname"><br/>
+        <label>LastName</label>
+        <input type="text" formControlName="lastname"><br/>
+        <label>EmailId</label>
+        <input type="text" formControlName="emailid"><br/>
+        <label>DOB</label>l
+       <input type="text" formControlName="dob"><br/>
+        <label>Gender</label>
+        <input type="text" formControlName="gender"><br/>
+        <input type="submit" value="Update Employee"/><br/>
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    
+    
+</div>
+
