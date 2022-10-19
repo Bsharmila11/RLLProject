@@ -47,29 +47,6 @@ public class LoginService {
 		}	
 	}
 	
-	public String changePassword(Login login) 
-	{
-		Optional<Login> op=loginRepository.findById(login.getEmailid());
-		if(op.isPresent()) 
-		{
-			Login l=op.get();
-			if(l.getPassword().equals(login.getPassword())) 
-			{
-				return "record updation failure";
-			}
-			else 
-			{
-			l.setPassword(login.getPassword());
-			loginRepository.saveAndFlush(l);    //update existing records
-			return "Record updated successfully";
-			}
-		}
-		else 
-		{
-			 //employeeRepository.save(emp);
-			 return "Record not present";
-		}
-	}
-
+	
 
 }

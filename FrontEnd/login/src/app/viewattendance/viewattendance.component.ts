@@ -8,7 +8,7 @@ import { AttendanceService } from '../attendance.service';
 })
 export class ViewattendanceComponent implements OnInit {
 
-  eid:number =0;
+  eid:number;
   eattendance:string="";
   constructor(public ss:AttendanceService) { }
 

@@ -7,7 +7,7 @@ import { SalaryService } from '../salary.service';
   styleUrls: ['./viewsalary.component.css']
 })
 export class ViewsalaryComponent implements OnInit {
-  eid:number =0;
+  eid:number;
   esalary:string="";
   constructor(public ss:SalaryService) { }
 

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="com.test.AddEmployeeTest"></class>
+      <class name="com.test.AddLeaveDataTest"></class>
+      <class name="com.test.AddSalaryTest"></class>
+      <class name="com.test.AdminScheduleTest"></class>
+      <class name="com.test.LoginTest"></class>
+      <class name="com.test.UserLoginTest"></class>
+      <class name="com.test.UserRegisterTest"></class>
+      <class name="com.test.ViewAttendanceTest"></class>
+      <class name="com.test.ViewEmployeeTest"></class>
+      <class name="com.test.ViewSalaryTest"></class>
+       <class name="com.test.ViewScheduleTest"></class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

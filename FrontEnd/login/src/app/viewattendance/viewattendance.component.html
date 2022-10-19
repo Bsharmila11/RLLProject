@@ -1,9 +1,27 @@
-<div>
-    <h2>view attendance</h2>
-    Employee Id:<input type=number [(ngModel)]="eid"/>
+
+
+<div class="box">
+    <div class="formlabel">
+        <h2>view Attendance</h2>
+    </div>
+    <br>
+    <br>
+    
+        <div class="formgroup">
+            <label class="eidlabel">Employee Id</label>
+            <input type="number" [(ngModel)]="eid" id="va1"/>
+        </div>
+
+    
     <br/>
-    <button (click)="viewattendance(eid)">View attendance</button>
-    <br/>
-    <span>{{eattendance}}</span>
+    
+    <div class="buttongroup">
+    <button (click)="viewattendance(eid)" id="va2">View Attendance</button>
+    </div>
+    <br>
+    <span class="eat">{{eattendance}}</span>
+    <br>
+    
     
 </div>
+

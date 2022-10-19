@@ -8,7 +8,7 @@ import { ScheduleService } from '../schedule.service';
 })
 export class ViewscheduleComponent implements OnInit {
 
-  eid:number =0;
+  eid:number;
   eschedule:string="";
 
   constructor(public sc:ScheduleService) { }

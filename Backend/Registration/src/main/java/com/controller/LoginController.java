@@ -35,9 +35,5 @@ public class LoginController {
 		return loginService.signUp(login);
 	}
 	
-	@PutMapping(value="changePassword",consumes=MediaType.APPLICATION_JSON_VALUE)
-	public String changePassword(@RequestBody Login login) {
-		return loginService.changePassword(login);
-	}
-
+	
 }

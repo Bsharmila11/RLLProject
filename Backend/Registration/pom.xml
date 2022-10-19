@@ -42,7 +42,22 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.5</version>
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.2.1</version>
+</dependency>
 	</dependencies>
+	
+	
+  	
+  
 
 	<build>
 		<plugins>
@@ -52,5 +67,8 @@
 			</plugin>
 		</plugins>
 	</build>
+	
+  
+  
 
 </project>
